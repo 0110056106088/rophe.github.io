@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rophe Training Academy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #ff0000;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        h1, h2 {
+            font-weight: bolder;
+        }
+        nav {
+            background-color: #0000ff;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .services {
+            display: flex;
+            justify-content: space-between;
+        }
+        .service-category {
+            flex-basis: 48%;
+        }
+        .contact-info {
+            background-color: #87CEEB;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        .booking {
+            background-color: #f0f0f0;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        .logo {
+            max-width: 200px;
+            height: auto;
+        }
+        .images {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+        .images img {
+            max-width: 30%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="new_rophe_logo.png" alt="Rophe Training Academy Logo" class="logo">
+        <h1>Rophe Training Academy</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#booking">Booking</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Rophe Community Services is a Non-Governmental Organization that provides health care services to people using drugs, HTS (HIV counseling and testing services), wellness programs and linkage to care to the community.</p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service-category">
+                    <h3>Primary Health Care Clinic Services</h3>
+                    <ul>
+                        <li>Treatment for chronic conditions</li>
+                        <li>Family planning services</li>
+                        <li>Mother and child services</li>
+                        <li>Antenatal Clinic</li>
+                        <li>Drug rehabilitation services</li>
+                    </ul>
+                </div>
+                <div class="service-category">
+                    <h3>Academic Services</h3>
+                    <ul>
+                        <li>Social Auxiliary level 5</li>
+                        <li>Child and youth care level 5</li>
+                        <li>Chemical Laboratory Analysis</li>
+                        <li>FETC counseling course</li>
+                        <li>Community health care courses</li>
+                        <li>Short skills program</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact-info">
+            <h2>Contact Us</h2>
+            <h3>Head Office</h3>
+            <p>1086 Albertina Sisulu Bezvalley, 9th Street, JHB</p>
+            <p>Phone: +27 76 682 2709</p>
+            <h3>Alexander Branch</h3>
+            <p>One Chadwick Avenue, Wynberg 2090</p>
+            <p>Phone: +27 76 217 8101</p>
+        </section>
+        <section id="booking" class="booking">
+            <h2>Book an Appointment</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="service">Service:</label>
+                <select id="service" name="service" required>
+                    <option value="">Select a service</option>
+                    <option value="clinic">Primary Health Care Clinic</option>
+                    <option value="academic">Academic Services</option>
+                </select>
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+        <div class="images">
+            <img src="rophe_student.jpg" alt="Rophe Student 1">
+            <img src="rophestudent.jpg" alt="Rophe Student 2">
+            <img src="rophestudent2.jpg" alt="Rophe Student 3">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Rophe Training Academy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
